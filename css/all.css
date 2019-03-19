@@ -1,0 +1,321 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1024px;
+  border: #7d7d7d 1px solid;
+  background: #F7F7F7;
+}
+
+header {
+  border-top: 1px solid #fff;
+  background: url(../images/Hero.png) no-repeat;
+}
+
+header h1 {
+  margin: 90px 0 100px 0;
+  text-align: center;
+  font-size: 40px;
+  color: #FFFFFF;
+  letter-spacing: 3.89px;
+}
+
+header #select {
+  display: block;
+  margin: 0 auto 79px auto;
+  width: 45%;
+  height: 48px;
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+  background: url(../images/icons_down.png) 97% center no-repeat rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  text-indent: 1em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+header nav {
+  margin: 0 auto;
+  width: 80%;
+  border: #fff 1px solid;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0;
+  background: #fff;
+}
+
+header nav h2 {
+  margin: 20px 0 20px 26px;
+  font-size: 18px;
+}
+
+header nav #pop {
+  margin: 14px auto 18px auto;
+}
+
+header nav #pop:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+header nav #pop li {
+  float: left;
+  margin: 0 3%;
+  width: 15%;
+  border-radius: 5px;
+}
+
+header nav #pop li:hover {
+  box-shadow: #555 0 0 5px 1px inset;
+}
+
+header nav #pop li:nth-child(1) {
+  margin-left: 8%;
+  background: #8A82CC;
+}
+
+header nav #pop li:nth-child(2) {
+  background: #FFA782;
+}
+
+header nav #pop li:nth-child(3) {
+  background: #F5D105;
+}
+
+header nav #pop li:nth-child(4) {
+  background: #559AC8;
+}
+
+header nav #pop li a {
+  display: block;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main {
+  position: relative;
+  margin: 50px 3%;
+  border-top: 1.5px solid;
+  -o-border-image: url(../images/dashed.svg) 1 4 0 1 round;
+     border-image: url(../images/dashed.svg) 1 4 0 1 round;
+}
+
+.main .topball {
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 12px);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1.5px solid #559AC8;
+  background: #f7f7f7;
+}
+
+.main .topball .ballstyle {
+  margin: 8px auto;
+  height: 0;
+  width: 0;
+  border-top: 8px solid #559AC8;
+  border-left: 6px solid #fff;
+  border-right: 6px solid #fff;
+  border-radius: 2px 2px 0 0;
+}
+
+.main .title {
+  margin: 65px 0 24px 0;
+  font-size: 36px;
+  color: #8A82CC;
+  text-align: center;
+}
+
+.main #attraction-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.main #attraction-list li {
+  position: relative;
+  margin: 15px 0;
+  width: 49%;
+  box-shadow: #d2d2d2 0 2px 5px 0;
+  background: #fff;
+}
+
+.main #attraction-list li img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  -webkit-clip-path: polygon(0 25%, 0 calc(25% + 155px), 100% calc(25% + 155px), 100% 25%);
+          clip-path: polygon(0 25%, 0 calc(25% + 155px), 100% calc(25% + 155px), 100% 25%);
+  transform: translateY(-25%);
+}
+
+.main #attraction-list li .place {
+  position: absolute;
+  top: 41%;
+  left: 5%;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.main #attraction-list li .zone {
+  position: absolute;
+  top: 125px;
+  right: 5%;
+  color: #FFFFFF;
+}
+
+.main #attraction-list li .opentime {
+  margin-top: 37%;
+  margin-left: 5%;
+  background: url(../images/icons_clock.png) 0 center no-repeat;
+  text-indent: 27px;
+  line-height: 20px;
+}
+
+.main #attraction-list li .add {
+  margin: 16px 0 0 5%;
+  background: url(../images/icons_pin.png) 0 center no-repeat;
+  text-indent: 27px;
+  line-height: 20px;
+}
+
+.main #attraction-list li .phone {
+  margin: 16px 0 22px 5%;
+  background: url(../images/icons_phone.png) 1.5px center no-repeat;
+  text-indent: 27px;
+  line-height: 20px;
+}
+
+.main #attraction-list li .ticket {
+  position: absolute;
+  top: 86%;
+  right: 24px;
+  min-width: 90px;
+  min-height: 20px;
+  background: url(../images/icons_tag.png) 0 center no-repeat;
+  text-indent: 27px;
+  line-height: 20px;
+}
+
+.main #pagebar {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 49px 0 41px 0;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.main #pagebar #pagelist li {
+  float: left;
+  margin: 0 12px;
+}
+
+.main #pagebar #pagelist li a {
+  font-size: 16px;
+  color: #4A4A4A;
+}
+
+.main #pagebar #pagelist li a:hover {
+  color: #559AC8;
+}
+
+.main #pagebar #pagelist li a #pre-page, .main #pagebar #pagelist li a #next-page {
+  margin: 0 34px;
+}
+
+.main #pagebar #pagelist li .locked {
+  color: rgba(73, 73, 73, 0.5);
+}
+
+.main #pagebar #pagelist li .locked:hover {
+  cursor: default;
+  color: rgba(73, 73, 73, 0.5);
+}
+
+.main #gotop {
+  position: absolute;
+  right: -12px;
+  bottom: 79px;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  border: #559AC8 1px solid;
+  background: #559AC8;
+}
+
+footer h2 {
+  margin: 24px 0 15px 0;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: #FFD366;
+  text-align: center;
+}

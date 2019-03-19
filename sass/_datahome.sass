@@ -1,0 +1,182 @@
+$text-indent: 27px
+$text-line-height: 20px
+.wrap
+    margin: 0 auto
+    max-width: 1024px
+    border: #7d7d7d 1px solid
+    background: #F7F7F7
+header
+    border-top: 1px solid #fff
+    background: url(../images/Hero.png) no-repeat
+    h1
+        margin: 90px 0 100px 0
+        text-align: center
+        font-size: 40px
+        color: #FFFFFF
+        letter-spacing: 3.89px
+    #select
+        display: block
+        margin: 0 auto 79px auto
+        width: 45%
+        height: 48px
+        border: 3px solid #FFFFFF
+        border-radius: 3px
+        background: url(../images/icons_down.png) 97% center no-repeat rgba(255,255,255,0.70)
+        font-size: 18px
+        text-indent: 1em
+        appearance: none
+        -webkit-appearance: none
+        -moz-appearance: none
+    nav
+        margin: 0 auto
+        width: 80%
+        border: #fff 1px solid
+        border-radius: 5px
+        box-shadow: 0 1px 3px 0
+        background: #fff
+        h2
+            margin: 20px 0 20px 26px
+            font-size: 18px
+        #pop
+            +clear
+            margin: 14px auto 18px auto
+            li
+                float: left
+                margin: 0 3%
+                width: 15%
+                border-radius: 5px
+                &:hover
+                    box-shadow: #555 0 0 5px 1px inset
+                &:nth-child(1)
+                    margin-left: 8%
+                    background: #8A82CC
+                &:nth-child(2)
+                    background: #FFA782
+                &:nth-child(3)
+                    background: #F5D105
+                &:nth-child(4)
+                    background: #559AC8
+                a
+                    display: block
+                    line-height: 42px
+                    color: #fff
+                    text-decoration: none
+                    font-size: 20px
+                    text-align: center
+.main
+    position: relative
+    margin: 50px 3%
+    border-top: 1.5px solid
+    border-image: url(../images/dashed.svg)  1 4 0 1 round
+    .topball
+        position: absolute
+        top: -12px
+        left: calc(50% - 12px)
+        height: 24px
+        width: 24px
+        border-radius: 50%
+        border: 1.5px solid #559AC8
+        background: #f7f7f7
+        .ballstyle
+            margin: 8px auto
+            height: 0
+            width: 0
+            border-top: 8px solid #559AC8
+            border-left: 6px solid #fff
+            border-right: 6px solid #fff
+            border-radius: 2px 2px 0 0
+    .title
+        margin: 65px 0 24px 0
+        font-size: 36px
+        color: #8A82CC
+        text-align: center
+    #attraction-list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        li
+            position: relative
+            margin: 15px 0
+            width: 49%
+            box-shadow: #d2d2d2 0 2px 5px 0
+            background: #fff
+            img
+                position: absolute
+                left: 0
+                width: 100%
+                clip-path: polygon(0 25%, 0 calc(25% + 155px), 100% calc(25% + 155px), 100% 25%)
+                transform: translateY(-25%)
+            .place
+                position: absolute
+                top: 41%
+                left: 5%
+                font-size: 24px
+                color: #FFFFFF
+            .zone
+                position: absolute
+                top: 125px
+                right: 5%
+                color: #FFFFFF
+            .opentime
+                margin-top: 37%
+                margin-left: 5%
+                background: url(../images/icons_clock.png) 0 center no-repeat
+                text-indent: $text-indent
+                line-height: $text-line-height
+            .add
+                margin: 16px 0 0 5%
+                background: url(../images/icons_pin.png) 0 center no-repeat
+                text-indent: $text-indent
+                line-height: $text-line-height
+            .phone
+                margin: 16px 0 22px 5%
+                background: url(../images/icons_phone.png) 1.5px center no-repeat
+                text-indent: $text-indent
+                line-height: $text-line-height
+            .ticket
+                position: absolute
+                top: 86%
+                right: 24px
+                min-width: 90px
+                min-height: 20px
+                background: url(../images/icons_tag.png) 0 center no-repeat
+                text-indent: $text-indent
+                line-height: $text-line-height
+    #pagebar
+        display: flex
+        margin: 49px 0 41px 0
+        justify-content: center
+        #pagelist li
+            float: left
+            margin: 0 12px
+            a
+                font-size: 16px
+                color: #4A4A4A
+                &:hover
+                    color: #559AC8
+                #pre-page, #next-page
+                    margin: 0 34px
+            .locked
+                color: rgba(73,73,73,0.50)
+                &:hover
+                    cursor: default
+                    color: rgba(73,73,73,0.50)
+    #gotop
+        position: absolute
+        right: -12px
+        bottom: 79px
+        cursor: pointer
+footer
+    width: 100%
+    height: 90px
+    border: #559AC8 1px solid
+    background: #559AC8
+    h2
+        margin: 24px 0 15px 0
+        font-size: 14px
+        color: #FFFFFF
+        text-align: center
+    p
+        font-size: 14px
+        color: #FFD366
+        text-align: center

@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-71C8FHG8J7"
-    ></script>
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-71C8FHG8J7');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NDNJ7NCB');
     </script>
+    <!-- End Google Tag Manager -->
 
-    <!-- bannerforga -->
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-KMGLQQ38XV"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-KMGLQQ38XV');
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -38,6 +23,43 @@
     <link rel="stylesheet" href="css/all.css" />
   </head>
   <body>
+    <script type="module">
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js';
+      import {
+        getAnalytics,
+        logEvent,
+      } from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js';
+      const firebaseConfig = {
+        apiKey: 'AIzaSyC-9N9OlMnobA8ROzEHeAqJPYZJvLaJHxc',
+        authDomain: 'ga-test-4255b.firebaseapp.com',
+        projectId: 'ga-test-4255b',
+        storageBucket: 'ga-test-4255b.appspot.com',
+        messagingSenderId: '790619946988',
+        appId: '1:790619946988:web:27293cbd0a917942ab4ac9',
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      function trackNavClick(e) {
+        logEvent(analytics, 'nav_click', {
+          btn_name: e.target.dataset.name,
+        });
+      }
+
+      document.addEventListener('#pop', 'click', trackNavClick);
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NDNJ7NCB"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
       <header>
         <h1>高雄旅遊資訊</h1>
@@ -49,10 +71,10 @@
         <nav>
           <h2>熱門行政區</h2>
           <ul id="pop">
-            <li><a href="#">苓雅區</a></li>
-            <li><a href="#">三民區</a></li>
-            <li><a href="#">美濃區</a></li>
-            <li><a href="#">大樹區</a></li>
+            <li><a href="#" data-name="苓雅區">苓雅區</a></li>
+            <li><a href="#" data-name="三民區">三民區</a></li>
+            <li><a href="#" data-name="美濃區">美濃區</a></li>
+            <li><a href="#" data-name="大樹區">大樹區</a></li>
           </ul>
         </nav>
       </header>

@@ -42,8 +42,8 @@
       const analytics = getAnalytics(app);
 
       function trackNavClick(e) {
-        logEvent(analytics, 'nav_click', {
-          btn_name: e.target.dataset.name,
+        logEvent(analytics, 'select_item', {
+          item_list_name: e.target.dataset.name,
         });
       }
 

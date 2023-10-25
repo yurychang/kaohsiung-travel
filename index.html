@@ -36,12 +36,14 @@
         storageBucket: 'ga-test-4255b.appspot.com',
         messagingSenderId: '790619946988',
         appId: '1:790619946988:web:27293cbd0a917942ab4ac9',
+        measurementId: 'G-P0BBVV4PEE',
       };
 
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
 
       function trackNavClick(e) {
+        console.log(`GA log: select_item=${e.target.dataset.name}`);
         logEvent(analytics, 'select_item', {
           item_list_name: e.target.dataset.name,
         });
